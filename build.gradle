@@ -1,0 +1,19 @@
+plugins {
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/com.browserup/browserup-proxy-core
+    implementation group: 'com.browserup', name: 'browserup-proxy-core', version: '2.1.2'
+}
+
+application {
+    mainClass = "demo.ProxyServer"
+}
